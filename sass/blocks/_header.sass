@@ -1,0 +1,40 @@
+.header
+    position: fixed
+    width: 100%
+    background-color: #fff
+    z-index: 99
+    transition: all .5s ease
+    &_content
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &_logo
+        padding: 20px 10px
+        display: flex
+        align-items: center
+        &__text
+            +bold
+            font-size: 18px
+            color: #3f444e
+        &__img
+            width: 15px
+    &_profile
+        &_img
+            position: relative
+        &__online
+            position: absolute
+            top: 0
+            right: 0
+            width: 5px
+            height: 5px
+            background-color: #d8232a
+            border-radius: 100%
+            border: 3px solid #fff
+        &__img
+            width: 48px
+            height: 48px
+            border-radius: 100%
+            object-fit: cover
+
+    &.out
+	    transform: translateY(-100%)

@@ -1,0 +1,145 @@
+.grid
+    padding-top: 40vh
+    padding-bottom: 90px
+    &_content
+        display: grid
+        grid-auto-flow: dense
+        gap: 5px
+        grid-template-columns: repeat(auto-fit, minmax(147px, 1fr))
+    &__title
+        margin: 10px 0
+        text-transform: uppercase
+        +bold
+        font-size: 16px
+        color: #3f444e
+
+.card
+    position: relative
+    background-color: #3f444e
+    border-radius: 5px
+    &_content
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+    &_info
+        border-radius: 5px 5px 0 0
+        width: 100%
+        height: 40%
+        z-index: 1
+        &_counters
+            padding: 10px
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            &_counter
+                display: flex
+                align-items: center
+                margin-bottom: 5px
+                &__icon
+                    width: 12px
+                    height: 12px
+                    margin-right: 5px
+                &__number
+                    font-size: 12px
+    &_image
+        position: relative
+        border-radius: 0 0 5px 5px
+        width: 100%
+        height: 60%
+        overflow: hidden
+        &__img
+        &__sepia
+            position: absolute
+            width: 100%
+            height: 100%
+            background-color: transparentize(#424040, 0.65)
+    &__title
+        position: absolute
+        bottom: 10px
+        left: 10px
+        +bold
+        font-size: 15px
+        color: #ffffff
+    &_top-icon
+        position: absolute
+        top: 8px
+        right: 8px
+        width: 14px
+        height: 14px
+        z-index: 1
+
+.card-small
+    padding-top: 100%
+    &_info
+        position: absolute
+        color: #ffffff
+    &_image
+        height: 100%
+        border-radius: 5px
+
+.card-tall
+    grid-row: span 2
+    padding-top: 200%
+    &_info
+        background-color: #fff
+        &_items
+            padding-left: 10px
+        &_item
+            display: flex
+            align-items: center
+            margin-bottom: 3px
+            &__title
+                margin-right: 5px
+                +bold
+                font-size: 10px
+            &__text
+                font-size: 10px
+            &_stars
+                display: flex
+            &__star
+                width: 12px
+                height: 12px
+                margin-right: 3px
+    &_top-icon
+        background-color: #3f444e
+        padding: 8px
+        top: 0
+        right: 0
+        border-radius: 0 5px
+
+.card-wide
+    grid-column: span 2
+    padding-top: 50%
+    overflow: hidden
+    &_image
+        height: 100%
+        border-radius: 5px
+    &_play-button
+        position: absolute
+        width: 100%
+        height: 100%
+        z-index: 1
+        display: flex
+        justify-content: center
+        &__icon
+            width: 25%
+    &__video
+        width: 100%
+        position: absolute
+        border-radius: 5px
+        z-index: 2
+
+@media screen and ( max-width: 319px)
+    .grid
+        &_content
+            gap: 15px
+            display: flex
+            flex-direction: column
+    .card-tall
+        &_info
+            height: 20%
+            padding-bottom: 25px
+        &_image
+            height: 80%
+    

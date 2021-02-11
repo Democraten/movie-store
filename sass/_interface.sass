@@ -1,0 +1,61 @@
+html
+    scroll-behavior: smooth
+body
+    position: relative
+    background-color: #edeff0
+    +regular
+img
+    width: 100%
+.container
+    margin: auto
+    max-width: 800px
+    padding: 0 10px
+
+.invisible
+    display: none
+
+.bar-icon
+    width: 22px
+    height: 22px
+
+.main
+    padding-top: 60px
+
+.button
+    border: none
+    border-radius: 1s5px
+    text-transform: uppercase
+    padding: 11px 15px
+    background-color: #d8232a
+    border: solid 2px #d8232a 
+    outline: none
+    color: #ffffff
+    +regular
+    font-size: 12px
+    &:hover
+        color: #d8232a
+        background: transparent
+
+.underlay
+    position: fixed
+    width: 100%
+    max-width: 800px
+    left: 50%
+    transform: translateX(-50%)
+    // min-width 800px
+    // left: calc(50% - 410px);
+
+.top-icon
+    position: fixed
+    right: 0
+    bottom: 20%
+    width: 40px
+    height: 40px
+    background-color: #fff
+    z-index: 99
+    padding: 10px
+    border-radius: 15px 0 0 15px
+    transform: translateX(100%)
+    transition: all .3s ease
+    &.visible
+        transform: translateX(0%)

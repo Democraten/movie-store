@@ -1,0 +1,19 @@
+<svg id="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d8232a;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #575c67;
+      }
+    </style>
+  </defs>
+  <path id="video" class="cls-1" d="M284,252a8,8,0,1,1,8-8A8,8,0,0,1,284,252Zm0-14a6,6,0,1,0,6,6A6,6,0,0,0,284,238Z" transform="translate(-276 -236)"/>
+  <path id="video1" class="cls-2" d="M286.79,244.345l-4.263,2.587a0.326,0.326,0,0,1-.541-0.307v-5.216a0.327,0.327,0,0,1,.541-0.309l4.263,2.588A0.353,0.353,0,0,1,286.79,244.345Z" transform="translate(-276 -236)"/>
+</svg>

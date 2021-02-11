@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Movie Store</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header_content container">
+            <div class="header_logo">
+                <span class="header_logo__text">M</span>
+                <img src="img/logo-play.svg" alt="" class="header_logo__img">
+                <span class="header_logo__text">VIE STORE</span>
+            </div>
+            <a href="#" class="header_profile">
+                <div class="header_profile_img">
+                    <img src="img/user.jpg" alt="profile" class="header_profile__img">
+                    <div class="header_profile__online"></div>
+                </div>
+            </a>
+        </div>
+    </header>
+    <div class="bottom-menu" id="bottom-menu">
+        <a href="#" class="bottom-menu__item">
+            <img src="img/icons/house.svg" viewBox="0 0 22 22" alt="#" class="bar-icon">
+        </a>
+        <a href="#" class="bottom-menu__item">
+            <img src="img/icons/image.svg" alt="#" class="bar-icon">
+        </a>
+        <a href="#" class="bottom-menu__item">
+            <img src="img/icons/music.svg" alt="#" class="bar-icon">
+        </a>
+        <a href="#" class="bottom-menu__item">
+            <img src="img/icons/cart.svg" alt="#" class="bar-icon">
+        </a>
+    </div>
+    <a href="#top" id="top-icon" class="top-icon">
+        <img src="img/icons/up-arrow.svg"></div>
+    </a>
+    <main class="main">
+        <div class="underlay">
+            <section class="hero" id="hero" name="top">
+                <div class="hero_background">
+                    <div class="hero_background_overlay">
+                        <img class="hero_background_overlay__logo" src='/img/hero-text.png'/>
+                        <button id="watch-button" class="hero_background_overlay__button button">Watch Now</button>
+                    </div>
+                    <div class="hero_background_bar">
+                        <div class="hero_background_bar_items">
+                            <div class="hero_background_bar_item">
+                                <img src="/img/icons/like.svg" alt="likes" class="hero_background_bar_item__img">
+                                <span class="hero_background_bar_item__text">2,548</span>
+                            </div>
+                            <div class="hero_background_bar_item">
+                                <img src="/img/icons/comments.svg" alt="comments" class="hero_background_bar_item__img">
+                                <span class="hero_background_bar_item__text">21</span>
+                            </div>
+                            <div class="hero_background_bar_item">
+                                <img src="/img/icons/download.svg" alt="downloads" class="hero_background_bar_item__img">
+                                <span class="hero_background_bar_item__text">564</span>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="hero_info">
+                    <div class="hero_info_item">
+                        <span class="hero_info_item__text rating_text">Rating</span>
+                        <div class="hero_info_item_stars">
+                            <img src="/img/icons/star-filled.svg" alt="star" class="hero_info_item__star">
+                            <img src="/img/icons/star-filled.svg" alt="star" class="hero_info_item__star">
+                            <img src="/img/icons/star-filled.svg" alt="star" class="hero_info_item__star">
+                            <img src="/img/icons/star-filled.svg" alt="star" class="hero_info_item__star">
+                            <img src="/img/icons/star.svg" alt="star" class="hero_info_item__star">
+                        </div>
+                    </div>
+                    <div class="hero_info_item">
+                        <span class="hero_info_item__text">Updated</span>
+                        <span class="hero_info_item__data">Feb 20, 2014</span>
+                    </div>
+                    <div class="hero_info_item">
+                        <span class="hero_info_item__text">Published</span>
+                        <span class="hero_info_item__data">Feb 20, 2014</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="grid container" id="grid">
+            <h2 class="grid__title" id="end-scroll">Featured movies</h2>
+            <div class="grid_content">
+                <div class="card card-small">
+                    <div class="card_content">
+                        <img src="/img/icons/download-white.svg" alt="" class="card_top-icon">
+                        <div class="card_info card-small_info">
+                            <div class="card_info_counters">
+                                <div class="card_info_counters_counter">
+                                    <img src="img/icons/like-filled.svg" alt="" class="card_info_counters_counter__icon">
+                                    <span class="card_info_counters_counter__number">3,423</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_image card-small_image">
+                            <div class="card_image__sepia"></div>
+                            <img src="/img/cards/Allied.jpg" srcset="/img/cards/Allied-min.jpg" class="card_image__img"/>
+                        </div>     
+                        <span class="card__title">Allied</span>
+                    </div>
+                </div>
+                <div class="card card-tall">
+                    <div class="card_content">
+                        <img src="/img/icons/play.svg" alt="" class="card_top-icon card-tall_top-icon">
+                        <div class="card_info card-tall_info">
+                            <div class="card_info_counters">
+                                <div class="card_info_counters_counter">
+                                    <img src="img/icons/like.svg" alt="" class="card_info_counters_counter__icon">
+                                    <span class="card_info_counters_counter__number">5,432</span>
+                                </div>
+                                <div class="card_info_counters_counter">
+                                    <img src="img/icons/comments.svg" alt="" class="card_info_counters_counter__icon">
+                                    <span class="card_info_counters_counter__number">745</span>
+                                </div>
+                                <div class="card_info_counters_counter">
+                                    <img src="img/icons/download.svg" alt="" class="card_info_counters_counter__icon">
+                                    <span class="card_info_counters_counter__number">543</span>
+                                </div>
+                            </div>
+                            <div class="card-tall_info_items">
+                                <div class="card-tall_info_item">
+                                    <span class="card-tall_info_item__title">Rating:</span>
+                                    <div class="card-tall_info_item_stars">
+                                        <img src="/img/icons/star-filled.svg" alt="star" class="card-tall_info_item__star">
+                                        <img src="/img/icons/star-filled.svg" alt="star" class="card-tall_info_item__star">
+                                        <img src="/img/icons/star-filled.svg" alt="star" class="card-tall_info_item__star">
+                                        <img src="/img/icons/star-filled.svg" alt="star" class="card-tall_info_item__star">
+                                        <img src="/img/icons/star-black.svg" alt="star" class="card-tall_info_item__star">
+                                    </div>
+                                </div>
+                                <div class="card-tall_info_item">
+                                    <span class="card-tall_info_item__title">Release Date:</span>
+                                    <span class="card-tall_info_item__text">Feb 09, 2014</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_image card-tall_image">
+                            <div class="card_image__sepia"></div>
+                            <img src="/img/cards/Wolf.jpg" srcset="/img/cards/Wolf-min.jpg" class="card_image__img"/>
+                        </div>
+                        <span class="card__title">The Wolf of Wall Street</span>
+                    </div>
+                </div>
+                <div class="card card-small">
+                    <div class="card_content">
+                        <img src="/img/icons/download-white.svg" alt="" class="card_top-icon">
+                        <div class="card_info card-small_info">
+                            <div class="card_info_counters">
+                                <div class="card_info_counters_counter">
+                                    <img src="img/icons/like-filled.svg" alt="" class="card_info_counters_counter__icon">
+                                    <span class="card_info_counters_counter__number">6,341</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_image card-small_image">
+                            <div class="card_image__sepia"></div>
+                            <img src="/img/cards/grown-ups.jpg" srcset="/img/cards/grown-ups-min.jpg" class="card_image__img"/>
+                        </div>
+                        <span class="card__title">Grown Ups</span>
+                    </div>
+                </div>
+                <div class="card card-wide">
+                    <div class="card_content">
+                        <video src="/video/bbc.mp4" controls="controls" class="card-wide__video" poster="/img/cards/bbc-min.jpg" data-poster="/img/cards/bbc.jpg"></video>
+                        <div class="card-wide_play-button">
+                            <img src="img/icons/play.svg" alt="" class="card-wide_play-button__icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-small">
+                    <div class="card_content">
+                        <img src="/img/icons/download-white.svg" alt="" class="card_top-icon">
+                        <div class="card_info card-small_info">
+                            <div class="card_info_counters">
+                                <div class="card_info_counters_counter">
+                                    <img src="img/icons/like-filled.svg" alt="" class="card_info_counters_counter__icon">
+                                    <span class="card_info_counters_counter__number">2,879</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_image card-small_image">
+                            <div class="card_image__sepia"></div>
+                            <img src="/img/cards/accountant.jpg" srcset="/img/cards/accountant-min.jpg" class="card_image__img"/>
+                        </div>
+                        <span class="card__title">Accountant</span>
+                    </div>
+                </div>
+                <div class="card card-small">
+                    <div class="card_content">
+                        <img src="/img/icons/download-white.svg" alt="" class="card_top-icon">
+                        <div class="card_info card-small_info">
+                            <div class="card_info_counters">
+                                <div class="card_info_counters_counter">
+                                    <img src="img/icons/like-filled.svg" alt="" class="card_info_counters_counter__icon">
+                                    <span class="card_info_counters_counter__number">3,945</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_image card-small_image">
+                            <div class="card_image__sepia"></div>
+                            <img src="/img/cards/big-short.jpg" srcset="/img/cards/big-short-min.jpg" class="card_image__img"/>
+                        </div>
+                        <span class="card__title">The Big Short</span>
+                    </div>
+                </div>
+                <div class="card card-tall">
+                    <div class="card_content">
+                        <img src="/img/icons/play.svg" alt="" class="card_top-icon card-tall_top-icon">
+                        <div class="card_info card-tall_info">
+                            <div class="card_info_counters">
+                                <div class="card_info_counters_counter">
+                                    <img src="img/icons/like.svg" alt="" class="card_info_counters_counter__icon">
+                                    <span class="card_info_counters_counter__number">4,163</span>
+                                </div>
+                                <div class="card_info_counters_counter">
+                                    <img src="img/icons/comments.svg" alt="" class="card_info_counters_counter__icon">
+                                    <span class="card_info_counters_counter__number">745</span>
+                                </div>
+                                <div class="card_info_counters_counter">
+                                    <img src="img/icons/download.svg" alt="" class="card_info_counters_counter__icon">
+                                    <span class="card_info_counters_counter__number">543</span>
+                                </div>
+                            </div>
+                            <div class="card-tall_info_items">
+                                <div class="card-tall_info_item">
+                                    <span class="card-tall_info_item__title">Rating:</span>
+                                    <div class="card-tall_info_item_stars">
+                                        <img src="/img/icons/star-filled.svg" alt="star" class="card-tall_info_item__star">
+                                        <img src="/img/icons/star-filled.svg" alt="star" class="card-tall_info_item__star">
+                                        <img src="/img/icons/star-filled.svg" alt="star" class="card-tall_info_item__star">
+                                        <img src="/img/icons/star-filled.svg" alt="star" class="card-tall_info_item__star">
+                                        <img src="/img/icons/star-black.svg" alt="star" class="card-tall_info_item__star">
+                                    </div>
+                                </div>
+                                <div class="card-tall_info_item">
+                                    <span class="card-tall_info_item__title">Release Date:</span>
+                                    <span class="card-tall_info_item__text">July 26, 2019</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_image card-tall_image">
+                            <div class="card_image__sepia"></div>
+                            <img src="/img/cards/hollywood.jpg" srcset="/img/cards/hollywood-min.jpg" class="card_image__img"/>
+                        </div>
+                        <span class="card__title">Once Upon a Time in Hollywood</span>
+                    </div>
+                </div>
+                <div class="card card-small">
+                    <div class="card_content">
+                        <img src="/img/icons/download-white.svg" alt="" class="card_top-icon">
+                        <div class="card_info card-small_info">
+                            <div class="card_info_counters">
+                                <div class="card_info_counters_counter">
+                                    <img src="img/icons/like-filled.svg" alt="" class="card_info_counters_counter__icon">
+                                    <span class="card_info_counters_counter__number">7,289</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_image card-small_image">
+                            <div class="card_image__sepia"></div>
+                            <img src="/img/cards/focus.jpg" srcset="/img/cards/focus-min.jpg" class="card_image__img"/>
+                        </div> 
+                        <span class="card__title">Focus</span>
+                    </div>
+                </div>
+                <div class="card card-small">
+                    <div class="card_content">
+                        <img src="/img/icons/download-white.svg" alt="" class="card_top-icon">
+                        <div class="card_info card-small_info">
+                            <div class="card_info_counters">
+                                <div class="card_info_counters_counter">
+                                    <img src="img/icons/like-filled.svg" alt="" class="card_info_counters_counter__icon">
+                                    <span class="card_info_counters_counter__number">6,368</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_image card-small_image">
+                            <div class="card_image__sepia"></div>
+                            <img src="/img/cards/bosses.jpg" srcset="/img/cards/bosses-min.jpg" class="card_image__img"/>
+                        </div>
+                        <span class="card__title">Horrible Bosses</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.bottom-menu
+    display: flex
+    align-items: center
+    justify-content: space-between
+    max-width: 256px
+    background-color: #ffffff
+    border-radius: 10px
+    position: fixed
+    width: 80vw
+    bottom: 20px
+    left: calc(50% - 128px)
+    z-index: 99
+    transition: all .3s ease
+    &__item
+        padding: 12px 16px
+        &:hover
+            opacity: 0.5
+    &.invisible
+        opacity: 0
+
+
+@media screen and ( min-width: 650px)
+    .bottom-menu
+        bottom: auto
+        top: 7px
+    
