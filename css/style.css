@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'Rubik Medium';
-  src: url("/fonts/");
-  src: url("/fonts/?#iefix") format("embedded-opentype"), url("/fonts/Rubik-Medium.woff") format("woff"), url("/fonts/Rubik-Medium.ttf") format("truetype");
+  src: url("../fonts/");
+  src: url("../fonts/?#iefix") format("embedded-opentype"), url("../fonts/Rubik-Medium.woff") format("woff"), url("../fonts/Rubik-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Rubik Regular';
-  src: url("/fonts/Rubik-Regular.eot");
-  src: url("/fonts/Rubik-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Rubik-Regular.woff") format("woff"), url("/fonts/Rubik-Regular.ttf") format("truetype");
+  src: url("../fonts/Rubik-Regular.eot");
+  src: url("../fonts/Rubik-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik-Regular.woff") format("woff"), url("../fonts/Rubik-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -128,6 +128,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
+}
+
+.header_logo:hover {
+  opacity: 0.5;
 }
 
 .header_logo__text {
@@ -188,8 +193,8 @@ img {
   bottom: 20px;
   left: calc(50% - 128px);
   z-index: 99;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
 }
 
 .bottom-menu__item {
@@ -206,6 +211,7 @@ img {
 
 @media screen and (min-width: 650px) {
   .bottom-menu {
+    background-color: transparent;
     bottom: auto;
     top: 7px;
   }
@@ -230,7 +236,7 @@ img {
   min-height: 300px;
   max-height: 400px;
   background-color: #939393;
-  background: url("/img/hero.png") no-repeat;
+  background: url("../img/hero.png") no-repeat;
   background-size: cover;
 }
 
